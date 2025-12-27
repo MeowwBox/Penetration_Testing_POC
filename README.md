@@ -2255,6 +2255,7 @@
 - [go-file: 基于 Go 的文件分享工具，仅单可执行文件，开箱即用](https://github.com/songquanpeng/go-file)
 - [ehr_SafeCodeEncode_tamper:宏景ehr sql注入的tamper脚本](https://github.com/jdr2021/ehr_SafeCodeEncode_tamper)
 - [Struts2VulsScanTools：Struts2全版本漏洞检测工具 19.21](https://github.com/abc123info/Struts2VulsScanTools)
+- [CVE-2025-14847 - MongoDB 未经身份验证的内存泄漏漏洞检测工具](https://github.com/joe-desimone/mongobleed)
 
 ## <span id="head8"> 文章/书籍/教程相关</span>
 
