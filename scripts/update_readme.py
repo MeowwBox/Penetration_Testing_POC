@@ -1,10 +1,16 @@
 import feedparser
 import os
 import re
+import requests # 引入 requests 库来处理网络请求
 
 # ================= 配置区域 =================
 RSS_URL = "https://mrxn.net/rss.php"
 README_PATH = "README.md"
+
+# 伪装 User-Agent，防止被服务器屏蔽 GitHub Actions 的 IP
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+}
 
 # 关键词列表
 WEB_KEYWORDS = [
@@ -13,7 +19,6 @@ WEB_KEYWORDS = [
     '目录遍历', '目录穿越', 'xxe', 'bypass', 'auth'
 ]
 
-# README定位标记 (请确保这些标记在你README的HTML源码中完全匹配)
 START_MARKER_REGEX = r'id="head4">Web APP</span>' 
 END_MARKER_REGEX = r'id="head5">'                 
 # ===========================================
@@ -22,8 +27,16 @@ def fetch_rss_entries():
     """获取 RSS 并返回解析后的数据列表"""
     print(f"Fetching RSS from {RSS_URL}...")
     try:
-        feed = feedparser.parse(RSS_URL)
+        # 使用 requests 获取内容，绕过简单的反爬
+        response = requests.get(RSS_URL, headers=HEADERS, timeout=30)
+        response.raise_for_status()
+        
+        # 将内容传给 feedparser
+        feed = feedparser.parse(response.content)
+        
         entries = []
+        print(f"DEBUG: Fetched {len(feed.entries)} total items from RSS feed.")
+        
         for entry in feed.entries:
             entries.append({
                 "title": entry.title,
@@ -78,44 +91,47 @@ def update_readme():
 
     # 2. 获取该区块内现有的 URL (去重)
     existing_urls = get_existing_urls(lines[start_index:end_index])
-    print(f"Existing links count: {len(existing_urls)}")
+    print(f"Existing links count in target section: {len(existing_urls)}")
 
     # 3. 处理 RSS 数据
     rss_data = fetch_rss_entries()
     entries_to_add = []
 
+    print("--- Start Filtering ---")
     for item in rss_data:
         title = item['title']
         link = item['link']
 
+        # DEBUG: 打印处理过程
         if not is_relevant(title):
+            # print(f"Skipping (Keyword mismatch): {title}") 
             continue
 
         if link.strip() in existing_urls:
-            print(f"Skipping duplicate: {title}")
+            print(f"Skipping (Duplicate): {title}")
             continue
         
-        # 格式化
+        print(f"Found NEW Entry: {title}")
         entries_to_add.append(f"- [{title}]({link})")
+    print("--- End Filtering ---")
 
     if not entries_to_add:
-        print("No new entries.")
+        print("Result: No new entries to write.")
         return
 
-    print(f"Adding {len(entries_to_add)} new entries...")
+    print(f"Action: Adding {len(entries_to_add)} new entries...")
 
-    # 4. 插入位置：end_index 之前的最后一个非空行之后
+    # 4. 插入位置
     insert_pos = end_index 
     while insert_pos > start_index and lines[insert_pos-1].strip() == "":
         insert_pos -= 1
 
-    # 倒序插入，保持RSS顺序
     for entry in reversed(entries_to_add):
         lines.insert(insert_pos, entry)
     
     with open(README_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(lines))
-    print("Update successful.")
+    print("UPDATE SUCCESSFUL: README.md has been modified.")
 
 if __name__ == "__main__":
     update_readme()
