@@ -722,6 +722,21 @@
 - [汉王e脸通综合管理平台 权限绕过漏洞](https://mrxn.net/jswz/hanvon-efacego-auth-bypass.html)
 - [MetaCRM 客户关系管理系统 sendsms.jsp 任意文件上传漏洞](https://mrxn.net/jswz/metasoft-business-sendsms-upload-rce.html)
 - [CVE-2025-54424: 1Panel 客户端证书绕过RCE漏洞 一体化工具 (扫描+利用)](https://github.com/Mr-xn/CVE-2025-54424)
+- [天地伟业Easy7 exportGisObj 文件读取漏洞](https://mrxn.net/jswz/easy7-gis-exportGisObj-file-read.html)
+- [深信服运维安全管理系统 add_DNS 远程命令执行漏洞](https://mrxn.net/jswz/sangfor_osm-netConfig-add_DNS-rce.html)
+- [天地伟业Easy7 getCurrentUserInquestRooms_ZHGL SQL注入漏洞](https://mrxn.net/jswz/easy7-inquestRoom-getCurrentUserInquestRooms_ZHGL-sqli.html)
+- [用友U8Cloud /u8cloud/openapi/ce.paper.query SQL 注入漏洞](https://mrxn.net/jswz/u8cloud-openapi-ce-paper-query-sqli.html)
+- [飞牛系统（fnOS）app-center-static 目录遍历导致的任意文件读取漏洞+命令执行漏洞](https://mrxn.net/news/fnos-Directory-Traversal-rce.html)
+- [金和OA EpassInitTakenSnCheck.aspx、EpassInitTakenSnExec.aspx、EpassInitTakenSnInva.aspx、EpassValidate.aspx XXE+SQL注入漏洞](https://mrxn.net/jswz/jhsoft-EpassInitTakenSnCheck-xxe.html)
+- [东胜物流软件 /MvcShipping/MsBaseInfo/GetProParentModuTreeList SQL 注入漏洞](https://mrxn.net/jswz/dongsheng-MsBaseInfo-GetProParentModuTreeList-sqli.html)
+- [金和OA JHSoft.Web.H5SiteControl/xmlhttp.aspx XXE漏洞](https://mrxn.net/jswz/jhsoft-H5SiteControl-xmlhttp-xxe.html)
+- [东胜物流软件 CompanysAccountGridSource.aspx SQL注入漏洞](https://mrxn.net/jswz/dongsheng-Shipping-CompanysAccountGridSource-sqli.html)
+- [金和OA Jhsoft.Web.dossier/XMLHttp.aspx XXE漏洞](https://mrxn.net/jswz/jhsoft-dossier-XMLHttp-xxe.html)
+- [金和OA JHSoft.Web.Departments/XmlHttp.aspx XXE+SQL注入漏洞](https://mrxn.net/jswz/jhsoft-Departments-XmlHttp-xxe.html)
+- [孚盟云CRM lkpClientsCust.aspx SQL注入漏洞](https://mrxn.net/jswz/fumacrm-PagePopWindow-lkpClientsCust-sqli.html)
+- [金和OA JHSoft.Web.CrmSystemSet/XMLHttp.aspx XXE漏洞](https://mrxn.net/jswz/jhsoft-CrmSystemSet-XMLHttp-xxe.html)
+- [孚盟云CRM AjaxWriteMail.ashx SQL注入漏洞](https://mrxn.net/jswz/fumacrm-Dingding-Ajax-AjaxWriteMail-sqli.html)
+- [金和OA ExamineNodCommisionDefault.aspx XXE漏洞](https://mrxn.net/jswz/jhsoft-ExamineNodCommisionDefault-xxe.html)
 
 
 ## <span id="head5"> 提权辅助相关</span>
