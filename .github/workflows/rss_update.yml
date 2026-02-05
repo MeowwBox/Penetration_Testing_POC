@@ -25,7 +25,7 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          pip install feedparser
+          pip install feedparser requests
 
       # 在运行脚本时也使用该虚拟环境
       - name: Run update script
