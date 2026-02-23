@@ -6,6 +6,8 @@ import requests # 引入 requests 库来处理网络请求
 # ================= 配置区域 =================
 RSS_URL = "https://mrxn.net/rss.php"
 README_PATH = "README.md"
+COMMIT_MSG_FILE = ".commit_titles.txt"
+MAX_TITLES_IN_MSG = 5
 
 # 伪装 User-Agent，防止被服务器屏蔽 GitHub Actions 的 IP
 HEADERS = {
@@ -97,6 +99,7 @@ def update_readme():
     rss_data = fetch_rss_entries()
     entries_to_add = []
 
+    new_titles = []
     print("--- Start Filtering ---")
     for item in rss_data:
         title = item['title']
@@ -113,10 +116,13 @@ def update_readme():
         
         print(f"Found NEW Entry: {title}")
         entries_to_add.append(f"- [{title}]({link})")
+        new_titles.append(title)
     print("--- End Filtering ---")
 
     if not entries_to_add:
         print("Result: No new entries to write.")
+        if os.path.exists(COMMIT_MSG_FILE):
+            os.remove(COMMIT_MSG_FILE)
         return
 
     print(f"Action: Adding {len(entries_to_add)} new entries...")
@@ -132,6 +138,17 @@ def update_readme():
     with open(README_PATH, 'w', encoding='utf-8') as f:
         f.write("\n".join(lines))
     print("UPDATE SUCCESSFUL: README.md has been modified.")
+
+    # 生成 commit message 并写入临时文件
+    n = len(new_titles)
+    displayed = new_titles[:MAX_TITLES_IN_MSG]
+    titles_str = " | ".join(displayed)
+    if n > MAX_TITLES_IN_MSG:
+        titles_str += f" ... 等共{n}篇"
+    commit_msg = f"docs: 更新 {n} 篇文章 - {titles_str} [skip ci]"
+    with open(COMMIT_MSG_FILE, 'w', encoding='utf-8') as f:
+        f.write(commit_msg)
+    print(f"Commit message written: {commit_msg}")
 
 if __name__ == "__main__":
     update_readme()
