@@ -759,6 +759,7 @@
 - [东胜物流软件 IPLimitController SQL注入漏洞](https://mrxn.net/jswz/dongsheng-IPLimit-UpdateIPAddress-sqli.html)
 - [大蚂蚁 (BigAnt) 即时通讯系统 DispersedOrgController 任意文件上传漏洞](https://mrxn.net/jswz/bigant-dispersedOrg-upload_file-rce.html)
 - [大蚂蚁 (BigAnt) 即时通讯系统 plus_get_favicon 任意文件上传漏洞](https://mrxn.net/jswz/bigant-plus_get_favicon-upload.html)
+- [东胜物流软件 MsAnnounceController SQL注入漏洞](https://mrxn.net/jswz/dongsheng-MsAnnounce-GetData-sqli.html)
 
 
 ## <span id="head5"> 提权辅助相关</span>
