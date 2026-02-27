@@ -18,7 +18,7 @@ HEADERS = {
 WEB_KEYWORDS = [
     'rce', 'sql', 'xss', 'csrf', 'upload', 'injection', 'web', 'cms', 
     '文件上传', '文件读取', 'sql注入', '信息泄露', '命令执行', 
-    '目录遍历', '目录穿越', 'xxe', 'bypass', 'auth'
+    '目录遍历', '目录穿越', 'xxe', 'bypass', 'auth', '漏洞'
 ]
 
 START_MARKER_REGEX = r'id="head4">Web APP</span>' 
