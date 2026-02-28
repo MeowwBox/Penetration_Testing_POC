@@ -766,6 +766,7 @@
 - [大蚂蚁 (BigAnt) 即时通讯系统 安装程序二次注入致远程代码执行漏洞](https://mrxn.net/jswz/bigant-install-config-rce.html)
 - [青龙面板最新版v2.20.1 鉴权绕过致RCE](https://mrxn.net/jswz/qinglong-auth-bypass-rce.html) | [青龙(qinglong)面板权限绕过致未授权远程代码执行(RCE)漏洞分析复现.md](./qinglong-auth-bypass2rce/青龙(qinglong)面板权限绕过致未授权远程代码执行(RCE)漏洞分析复现.md)
 - [大蚂蚁 (BigAnt) 即时通讯系统 moveDept SQL注入漏洞](https://mrxn.net/jswz/bigant-dept-moveDept-sqli.html)
+- [九佳易管理系统 Ajax_XT.ashx SQL 注入漏洞](https://mrxn.net/jswz/a8erp-Ajax_XT-sqli.html)
 
 
 ## <span id="head5"> 提权辅助相关</span>
