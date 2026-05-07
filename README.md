@@ -838,6 +838,7 @@
 - [cPanel WHM 权限绕过致RCE【cve-2026-41940】](https://github.com/watchtowrlabs/watchTowr-vs-cPanel-WHM-AuthBypass-to-RCE.py) | [cve-2026-41940 漏洞分析](https://labs.watchtowr.com/the-internet-is-falling-down-falling-down-falling-down-cpanel-whm-authentication-bypass-cve-2026-41940/)
 - [孚盟云CRM BusinessPriceListList.aspx SQL注入漏洞](https://mrxn.net/jswz/fumacrm-Dingding-Product-BusinessPriceList-sqli.html)
 - [天地伟业Easy7 /Easy7/rest/file/uploadFile 文件上传漏洞](https://mrxn.net/jswz/easy7-rest-file-uploadFile-rce.html)
+- [天地伟业Easy7 /Easy7/rest/file/deleteFile 文件删除漏洞](https://mrxn.net/jswz/easy7-rest-file-deleteFile.html)
 
 
 ## <span id="head5"> 提权辅助相关</span>
