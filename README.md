@@ -854,7 +854,7 @@
 - [windows 溢出提权小记](https://klionsec.github.io/2017/04/22/win-0day-privilege/)/[本地保存了一份+Linux&Windows提取脑图](./tools/Local%20Privilege%20Escalation.md)
 - [Windows常见持久控制脑图](./tools/Windows常见持久控制.png)
 - [CVE-2019-0803 Win32k漏洞提权工具（Windows 7/8/10, Server 2008/2012/2016/2019）](./CVE-2019-0803)
-- [脏牛Linux提权漏洞（Linux kernel 2.6.22 - 4.8.2）](https://github.com/Brucetg/DirtyCow-EXP)-[reverse_dirty-更改的脏牛提权代码，可以往任意文件写入任意内容](https://github.com/Rvn0xsy/reverse_dirty)|[linux_dirty：更改后的脏牛提权代码，可以往任意文件写入任意内容，去除交互过程](https://github.com/Rvn0xsy/linux_dirty)|[dirtycow-mem：脏牛利用C源码](https://github.com/sqlnetcat/dirtycow-mem)-[文章](https://mp.weixin.qq.com/s/xUhr6D9mGnrE_cJw1kmyFA)-[备份](https://archive.ph/wip/NCL3w)-[备份1](https://web.archive.org/web/20220918065539/https://mp.weixin.qq.com/s/xUhr6D9mGnrE_cJw1kmyFA)
+- [脏牛Linux提权漏洞（CVE-2016-5195，Linux kernel 2.6.22 - 4.8.2）](https://github.com/Brucetg/DirtyCow-EXP)-[reverse_dirty-更改的脏牛提权代码，可以往任意文件写入任意内容](https://github.com/Rvn0xsy/reverse_dirty)|[linux_dirty：更改后的脏牛提权代码，可以往任意文件写入任意内容，去除交互过程](https://github.com/Rvn0xsy/linux_dirty)|[dirtycow-mem：脏牛利用C源码](https://github.com/sqlnetcat/dirtycow-mem)-[文章](https://mp.weixin.qq.com/s/xUhr6D9mGnrE_cJw1kmyFA)-[备份](https://archive.ph/wip/NCL3w)-[备份1](https://web.archive.org/web/20220918065539/https://mp.weixin.qq.com/s/xUhr6D9mGnrE_cJw1kmyFA)|[CVE-2016-5195：timwr实现的Android版Dirty Cow利用工具](https://github.com/timwr/CVE-2016-5195)
 - [远控免杀从入门到实践之白名单（113个）](https://github.com/TideSec/BypassAntiVirus)|[远控免杀从入门到实践之白名单（113个）总结篇.pdf](./books/远控免杀从入门到实践之白名单（113个）总结篇.pdf)
 - [Linux提权-CVE-2019-13272  A linux kernel Local Root Privilege Escalation vulnerability with PTRACE_TRACEME（Linux kernel < 5.1.17，aarch64架构）](https://github.com/jiayy/android_vuln_poc-exp/tree/master/EXP-CVE-2019-13272-aarch64)
 - [Linux权限提升辅助一键检测工具](https://github.com/mzet-/linux-exploit-suggester)
@@ -1030,7 +1030,7 @@
 
 - [【Linux提权】CVE-2021-3490：Linux kernel 缓冲区错误漏洞](https://github.com/chompie1337/Linux_LPE_eBPF_CVE-2021-3490)
 
-- [【Linux 提权】CVE-2022-2602: Linux io_uring子系统UAF漏洞漏洞利用POC,可用于本地提权](https://github.com/LukeGix/CVE-2022-2602)
+- [【Linux 提权】CVE-2022-2602: Linux io_uring子系统UAF漏洞漏洞利用POC,可用于本地提权](https://github.com/LukeGix/CVE-2022-2602)|[CVE-2022-2602-Kernel-Exploit：另一个io_uring UAF内核提权利用](https://github.com/kiks7/CVE-2022-2602-Kernel-Exploit)
 
 - [CVE-2021-34473：Microsoft Exchange Server Remote Code Execution](https://github.com/phamphuqui1998/CVE-2021-34473)|[proxyshell-auto：自动化的ProxyShell漏洞利用](https://github.com/Udyz/proxyshell-auto)
 
@@ -1134,9 +1134,17 @@
 
 - [CVE-2023-27363: Foxit PDF Reader及Editor任意代码执行漏洞](https://github.com/j00sean/SecBugs/tree/main/CVEs/CVE-2023-27363)
 
+- [CVE-2026-34621：Adobe Acrobat Reader 原型污染与JS注入利用链（CVE-2026-34621/34622/34626），可实现沙箱内特权JS执行及本地文件读取外带](https://github.com/azefzafyoussef/CVE-2026-34621)
+
 - [keepass-password-dumper: CVE-2023-32784 KeePass 信息泄露漏洞](https://github.com/vdohney/keepass-password-dumper)
   
 - [百度网盘（7.59.5.104） Windows客户端存在命令注入漏洞](https://mrxn.net/news/baidupan-windows-client-rce.html)
+
+- [【Linux提权】CVE-2026-31431：Copy Fail Linux内核页缓存权限提升漏洞（影响2017年后几乎所有发行版）](https://github.com/theori-io/copy-fail-CVE-2026-31431)
+
+- [【Linux提权】CVE-2026-43284/CVE-2026-43500：Dirty Frag Linux内核页缓存写漏洞](https://github.com/Percivalll/Dirty-Frag-Kubernetes-PoC)|[dirty-frag-check：漏洞检测工具](https://github.com/haydenjames/dirty-frag-check)
+
+- [【Linux提权】CVE-2026-46300：Fragnesia Linux内核提权漏洞](https://github.com/Sentebale/CVE-2026-46300)|[另一个CVE-2026-46300利用](https://github.com/0xBlackash/CVE-2026-46300)
 
 
 
@@ -2380,6 +2388,7 @@
 - [WIKI-POC: 漏洞库【OA以及各种web APP漏洞】](https://github.com/7estUser/WIKI-POC)
 - [FineReportExploit: 基于go语言的帆软报表漏洞检测工具](https://github.com/Drac0nids/FineReportExploit)
 - [SSRFmap: 自动化SSRF漏洞探测](https://github.com/swisskyrepo/SSRFmap)
+- [nextssrf：CVE-2026-44578 Next.js WebSocket Upgrade Handler SSRF 扫描与利用工具，支持AWS/Azure/GCP云凭据提取、批量扫描及交互式利用Shell](https://github.com/ynsmroztas/nextssrf)
 - [qq-tim-elevation: 腾讯 QQ/TIM本地提权漏洞](https://github.com/vi3t1/qq-tim-elevation)
 - [VolatilityPro: 一款用于自动化处理内存取证的Python脚本，并提供GUI界面](https://github.com/Tokeii0/VolatilityPro)
 - [NimExec: 在Nim中执行横向移动的无文件命令](https://github.com/frkngksl/NimExec)
