@@ -956,6 +956,7 @@
 - [【Linux提权】CIFSwitch：利用 cifs.upcall 与 NSS 加载链进行本地提权 PoC](https://github.com/manizada/CIFSwitch)
 - [CACM：一款Linux权限维持+后渗透工具，功能涵盖端口扫描、敏感信息、指纹识别、IP伪装、键盘监控、进程隐藏、edr/av识别、权限维持、docker敏感信息扫描、ssh连接伪装等](https://github.com/RuoJi6/CACM)
 - [【Linux提权】RootHawk：整合多种已公开本地提权漏洞（如 Dirty Pipe、PwnKit、Polkit 3560 等）的一键化 Linux 提权检测与利用工具](https://github.com/RoadBicycle-C/RootHawk)
+- [【Linux提权】CVE-2026-43503：（DirtyClone）是一个演示 Linux 内核 Dirty‑COW 类漏洞的新型本地提权 PoC，利用网络栈共享内存处理缺陷实现对只读页缓存的非法写入并获取 root 权限。](https://github.com/0xBlackash/CVE-2026-43503)
 
 ## <span id="head6"> PC</span>
 
