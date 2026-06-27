@@ -955,6 +955,7 @@
 - [【Linux提权】Dirty Frag：Universal Linux LPE（CVE-2026-43284 / CVE-2026-43500，影响主流 Linux 发行版）](https://github.com/V4bel/dirtyfrag)
 - [【Linux提权】CIFSwitch：利用 cifs.upcall 与 NSS 加载链进行本地提权 PoC](https://github.com/manizada/CIFSwitch)
 - [CACM：一款Linux权限维持+后渗透工具，功能涵盖端口扫描、敏感信息、指纹识别、IP伪装、键盘监控、进程隐藏、edr/av识别、权限维持、docker敏感信息扫描、ssh连接伪装等](https://github.com/RuoJi6/CACM)
+- [【Linux提权】RootHawk：整合多种已公开本地提权漏洞（如 Dirty Pipe、PwnKit、Polkit 3560 等）的一键化 Linux 提权检测与利用工具](https://github.com/RoadBicycle-C/RootHawk)
 
 ## <span id="head6"> PC</span>
 
