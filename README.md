@@ -2446,6 +2446,7 @@
 - [clawgod: Claude Code的"上帝模式"补丁工具，解锁隐藏功能、移除安全限制（含渗透测试/C2/漏洞利用限制），一键安装，无需编译](https://github.com/0Chencc/clawgod)
 - [kslkatz_bof：通过 Cobalt Strike BOF 实现 Mimikatz 功能](https://github.com/Muz1K1zuM/kslkatz_bof)
 - [HTTP-2-Bomb-Nginx：Nginx HTTP/2 拒绝服务漏洞远程利用工具 (Remote DoS Exploit)](https://github.com/Mr-xn/HTTP-2-Bomb-Nginx) | [相关文献](https://github.com/califio/publications/tree/main/MADBugs/http2-bomb) | [相关文章](https://cybersecuritynews.com/http-2-bomb-remote-dos-exploit/)
+- [reverse-skill](https://github.com/zhaoxuya520/reverse-skill)：一个面向逆向工程、渗透测试和安全研究的技能路由包，支持 AI 编码助手自动选择合适的工作流和工具链，涵盖 APK、二进制、JS、CTF 等场景。
 
 ## <span id="head8"> 文章/书籍/教程相关</span>
 
