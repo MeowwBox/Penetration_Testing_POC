@@ -2450,6 +2450,9 @@
 - [reverse-skill](https://github.com/zhaoxuya520/reverse-skill)：一个面向逆向工程、渗透测试和安全研究的技能路由包，支持 AI 编码助手自动选择合适的工作流和工具链，涵盖 APK、二进制、JS、CTF 等场景。
 - [freellmapi](https://github.com/tashfeenahmed/freellmapi)：一个免费 LLM API 聚合服务，提供兼容 OpenAI 的统一接口，可无缝调用多个免费大模型，非常适合个人项目、教学和快速原型开发。
 - [jadx-ai-mcp](https://github.com/zinja-coder/jadx-ai-mcp)：为 Jadx 提供 MCP 扩展，使 AI 工具能够直接调用本地 Jadx 进行 APK/DEX 反编译、搜索与分析，是构建 AI 驱动逆向工作流的关键组件。
+- [NebulaPulsar](https://github.com/iss4cf0ng/NebulaPulsar)：一个 Java/C# WebShell 漏洞利用与植入工具，作为 Alien 项目的概念验证（PoC），适用于安全研究与漏洞利用实验。
+
+
 
 
 ## <span id="head8"> 文章/书籍/教程相关</span>
