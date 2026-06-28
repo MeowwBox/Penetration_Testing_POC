@@ -25,7 +25,7 @@
 - [CVE-2019-13051-Pi-Hole路由端去广告软件的命令注入&权限提升](./CVE-2019-13051)
 - [D-Link DIR-859 - RCE UnAutenticated (CVE-2019–17621)](https://github.com/s1kr10s/D-Link-DIR-859-RCE)
 - [Huawei HG255 Directory Traversal[目录穿越]](https://packetstormsecurity.com/files/155954/huaweihg255-traversal.rb.txt)|[本地备份文件](./tools/huaweihg255-traversal.rb)
-- [D-Link Devices - Unauthenticated Remote Command Execution in ssdpcgi (Metasploit)CVE-2019-20215(Metasploit)](./POC_Details/D-Link%20Devices%20-%20Unauthenticated%20Remote%20Command%20Execution%20in%20ssdpcgi%20(Metasploit)%20CVE-2019-20215.rb)
+- [D-Link Devices - Unauthenticated Remote Command Execution in ssdpcgi (Metasploit)CVE-2019-20215(Metasploit)](./POC_Details/D-Link%20Devices%20-%20Unauthenticated%20Remote%20Command%20Execution%20in%20ssdgi%20(Metasploit)%20CVE-2019-20215.rb)
 - [从 Interfaces.d 到 RCE：Mozilla WebThings IoT 网关漏洞挖掘](https://research.nccgroup.com/2020/02/10/interfaces-d-to-rce/)
 - [小米系列路由器远程命令执行漏洞（CVE-2019-18370，CVE-2019-18371）](https://github.com/UltramanGaia/Xiaomi_Mi_WiFi_R3G_Vulnerability_POC/blob/master/report/report.md)
 - [Intelbras Wireless N 150Mbps WRN240 - Authentication Bypass (Config Upload-未经验证即可替换固件)](https://www.exploit-db.com/exploits/48158)
@@ -957,6 +957,7 @@
 - [CACM：一款Linux权限维持+后渗透工具，功能涵盖端口扫描、敏感信息、指纹识别、IP伪装、键盘监控、进程隐藏、edr/av识别、权限维持、docker敏感信息扫描、ssh连接伪装等](https://github.com/RuoJi6/CACM)
 - [【Linux提权】RootHawk：整合多种已公开本地提权漏洞（如 Dirty Pipe、PwnKit、Polkit 3560 等）的一键化 Linux 提权检测与利用工具](https://github.com/RoadBicycle-C/RootHawk)
 - [【Linux提权】CVE-2026-43503：（DirtyClone）是一个演示 Linux 内核 Dirty‑COW 类漏洞的新型本地提权 PoC，利用网络栈共享内存处理缺陷实现对只读页缓存的非法写入并获取 root 权限。](https://github.com/0xBlackash/CVE-2026-43503)
+- [【Linux提权】CVE‑2026‑46331:packet_edit_meme](https://github.com/sgkdev/packet_edit_meme)：Linux 内核本地提权 PoC，利用 act_pedit 的 partial‑COW 缺陷实现页缓存投毒，从而在不修改磁盘文件的情况下获取 root 权限。
 
 ## <span id="head6"> PC</span>
 
