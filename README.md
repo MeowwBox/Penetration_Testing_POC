@@ -2451,7 +2451,8 @@
 - [freellmapi](https://github.com/tashfeenahmed/freellmapi)：一个免费 LLM API 聚合服务，提供兼容 OpenAI 的统一接口，可无缝调用多个免费大模型，非常适合个人项目、教学和快速原型开发。
 - [jadx-ai-mcp](https://github.com/zinja-coder/jadx-ai-mcp)：为 Jadx 提供 MCP 扩展，使 AI 工具能够直接调用本地 Jadx 进行 APK/DEX 反编译、搜索与分析，是构建 AI 驱动逆向工作流的关键组件。
 - [NebulaPulsar](https://github.com/iss4cf0ng/NebulaPulsar)：一个 Java/C# WebShell 漏洞利用与植入工具，作为 Alien 项目的概念验证（PoC），适用于安全研究与漏洞利用实验。
-
+- [Sherlock](https://github.com/sherlock-project/sherlock) 是一款知名的 OSINT（开源情报）工具，可根据用户名在 400 多个社交平台和网站中快速检索关联账号，广泛应用于网络安全、数字取证和数字身份分析等场景。 【1-6cddc9】【2-d3117e】
+- [Aliens Eye](https://github.com/arxhr007/Aliens_eye) 是一款基于 AI 的 OSINT 用户名扫描工具，支持在 840 多个平台中搜索关联账号，并结合机器学习与启发式检测技术提升识别准确率，适用于网络安全研究和在线身份画像分析。 【3-0542c5】【4-66d668】
 
 
 
