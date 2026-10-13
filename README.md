@@ -902,6 +902,7 @@
 - [用友U8+ PFWeb U8BM WebParamServiceBroker 未授权任意程序集反射调用代码执行漏洞](https://mrxn.net/jswz/U8-PFWeb-U8BM-WebParamServiceBroker-rce.html)
 - [用友U8+ OCAPI Update 未授权任意文件写命令执行漏洞](https://mrxn.net/jswz/U8-OCAPI-Update-rce.html)
 - [用友U8+ U8AuditWebSite U8ForWhereServices 未授权任意文件写命令执行漏洞](https://mrxn.net/jswz/U8-U8AuditWebSite-U8ForWhereServices-rce.html)
+- [用友U8+ UFFileManagerServices WebUploadServices 未授权任意文件写命令执行漏洞](https://mrxn.net/jswz/U8-UFFileManagerServices-WebUploadServices-rce.html)
 
 
 ## <span id="head5"> 提权辅助相关</span>
